@@ -1,28 +1,11 @@
 <template>
   <div class="home">
-    <div class="container">
-      <AboutMe />
+    <ParallaxCallToAction />
+    <AboutMe />
 
-      <hr class="m-0" />
+    <Projects />
 
-      <ActionCard
-        title="I am available for freelance work."
-        buttonText="Contact Me"
-        buttonLink="#contact"
-      />
-
-      <hr class="m-0" />
-
-      <Projects />
-
-      <hr />
-
-      <Skills />
-
-      <hr />
-
-      <ContactMe />
-    </div>
+    <Skills />
   </div>
 </template>
 
@@ -31,8 +14,7 @@
 import AboutMe from "@/components/sections/AboutMe.vue";
 import Projects from "@/components/sections/Projects.vue";
 import Skills from "@/components/sections/Skills.vue";
-import ContactMe from "@/components/sections/ContactMe.vue";
-import ActionCard from "@/components/sections/ActionCard.vue";
+import ParallaxCallToAction from "@/components/ParallaxCallToAction.vue";
 
 export default {
   name: "Home",
@@ -40,8 +22,7 @@ export default {
     AboutMe,
     Projects,
     Skills,
-    ContactMe,
-    ActionCard
+    ParallaxCallToAction
   }
 };
 </script>

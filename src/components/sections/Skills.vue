@@ -1,18 +1,21 @@
 <template>
   <section id="skills" class="small-section">
-    <a href="#skills" id="skills"></a>
-    <h1>Skills</h1>
-    <p>
-      Throughout my education and commitment to furthering my knowledge at home
-      I have built up a range of skills from 3D modelling to java programming.
-      You can explore just some of the skills I have built up below.
-    </p>
-    <p>
-      As well as the skills shown here, you can checkout the diffrent skills
-      that i have picked up from the various modules <a href="#">Here</a>
-    </p>
+    <div class="container">
+      <a href="#skills" id="skills"></a>
+      <h1>Skills</h1>
+      <p>
+        Throughout my education and commitment to furthering my knowledge at
+        home I have built up a range of skills from 3D modelling to java
+        programming. You can explore just some of the skills I have built up
+        below.
+      </p>
+      <p>
+        As well as the skills shown here, you can checkout the diffrent skills
+        that i have picked up from the various modules <a href="#">Here</a>
+      </p>
+    </div>
 
-    <div class="skill">
+    <div class="skill skill-left card">
       <div class="skill-title">
         <div class="skill-image">
           <img src="@/assets/images/skills/java-scaled.png" alt="" />
@@ -30,8 +33,8 @@
       </div>
     </div>
 
-    <div class="skill">
-      <div class="skill-title right">
+    <div class="skill skill-right card">
+      <div class="skill-title">
         <h3>Web Development</h3>
         <div class="skill-image">
           <img src="@/assets/images/skills/web-scaled.png" alt="" />
@@ -53,7 +56,7 @@
       </div>
     </div>
 
-    <div class="skill">
+    <div class="skill skill-left card">
       <div class="skill-title">
         <div class="skill-image">
           <img src="@/assets/images/skills/scaled.png" alt="" />
@@ -87,4 +90,32 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.skill {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 20px;
+  margin: 20px 650px 20px 200px;
+  border: none;
+}
+.skill:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill-right {
+  margin: 20px 200px 20px 650px;
+  text-align: right;
+}
+
+.skill-right > .skill-title {
+  margin-left: auto;
+}
+
+.skill-right .skill-image {
+  margin: 0 0 0 10px;
+}
+
+.skill-left > .skill-title {
+  text-align: left;
+}
+</style>
