@@ -25,7 +25,7 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav  mr-auto">
+          <ul class="navbar-nav  ml-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
                 >About Me</a

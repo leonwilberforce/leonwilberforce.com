@@ -3,7 +3,17 @@
     <h1>Articles</h1>
     <div class="container">
       <div class="row justify-content-md-center">
-        <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="col-12 category-list text-center">
+          <a href="#" class="badge badge-pill badge-category badge-selected"
+            >All</a
+          >
+          <a href="#" class="badge badge-pill badge-category">Category One</a>
+          <a href="#" class="badge badge-pill badge-category">Category Two</a>
+          <a href="#" class="badge badge-pill badge-category">Category Three</a>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-lg-4 col-sm-6">
           <div class="blog-item card ">
             <div class="blog-image"></div>
             <div class="card-body">
@@ -17,7 +27,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6">
           <div class="blog-item card ">
             <div class="blog-image"></div>
             <div class="card-body">
@@ -31,49 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="blog-item card ">
-            <div class="blog-image"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus eveniet perferendis quia consequuntur saepe iure
-                laborum aspernatur dolore fugit, labore recusandae ad
-                necessitatibus iusto accusantium delectus dicta quos hic odit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="blog-item card ">
-            <div class="blog-image"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus eveniet perferendis quia consequuntur saepe iure
-                laborum aspernatur dolore fugit, labore recusandae ad
-                necessitatibus iusto accusantium delectus dicta quos hic odit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
-          <div class="blog-item card ">
-            <div class="blog-image"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus eveniet perferendis quia consequuntur saepe iure
-                laborum aspernatur dolore fugit, labore recusandae ad
-                necessitatibus iusto accusantium delectus dicta quos hic odit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6">
           <div class="blog-item card ">
             <div class="blog-image"></div>
             <div class="card-body">
@@ -114,5 +82,30 @@ p {
 
 .blog-item {
   margin: 30px 10px;
+}
+
+.category-list .badge-category {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.category-list .badge-category {
+  border: 1px black solid;
+  color: black;
+}
+
+.category-list .badge-category:hover {
+  background-color: #66799e62;
+}
+
+.category-list .badge-selected {
+  padding: 10px 20px;
+  background-color: #66799e;
+  color: white;
+  border: none;
+}
+
+.category-list .badge-selected:hover {
+  background-color: #4e5d7a;
 }
 </style>

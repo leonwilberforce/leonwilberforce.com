@@ -77,6 +77,9 @@ section h1,
 section#freelance h3 {
   font-weight: 600;
   margin-bottom: 30px;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 3px;
 }
 
 section {
