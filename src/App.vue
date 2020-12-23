@@ -48,6 +48,11 @@ a:hover {
   color: #858585;
 }
 
+.card {
+  border: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 .btn.btn-outline-secondary {
   color: #fff;
   border-color: #f8f8ff;

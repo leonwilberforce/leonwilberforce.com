@@ -6,6 +6,10 @@
     <Projects />
 
     <Skills />
+
+    <TechnologyStack />
+
+    <Blog />
   </div>
 </template>
 
@@ -14,6 +18,8 @@
 import AboutMe from "@/components/sections/AboutMe.vue";
 import Projects from "@/components/sections/Projects.vue";
 import Skills from "@/components/sections/Skills.vue";
+import TechnologyStack from "@/components/sections/TechnologyStack.vue";
+import Blog from "@/components/sections/Blog.vue";
 import ParallaxCallToAction from "@/components/ParallaxCallToAction.vue";
 
 export default {
@@ -22,7 +28,9 @@ export default {
     AboutMe,
     Projects,
     Skills,
-    ParallaxCallToAction
+    ParallaxCallToAction,
+    TechnologyStack,
+    Blog
   }
 };
 </script>
