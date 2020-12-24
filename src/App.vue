@@ -143,41 +143,6 @@ body {
   padding: 50px 0 0 0;
 }
 
-.projects {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.project {
-  background: #4a5f87;
-  background-image: url("assets/images/tmp.png");
-  width: 250px;
-  height: 250px;
-  background-size: contain;
-  padding: 200px 0 0 0;
-  overflow: hidden;
-  margin: 10px;
-}
-
-.example-landscaping {
-  background-image: url("assets/images/example.png");
-}
-
-.sorting {
-  background-image: url("assets/images/sorting.png");
-}
-
-.project-image {
-  width: 200px;
-}
-
-.project-detail {
-  padding: 5px;
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 @keyframes example {
   0% {
     height: 0px;

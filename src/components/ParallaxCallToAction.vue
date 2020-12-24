@@ -4,20 +4,35 @@
       <div class="row">
         <div class="col-12">
           <h1>Leon Wilberforce</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
-            blanditiis dolorem labore facilis est possimus minus commodi,
-            explicabo non velit numquam! Consequatur sapiente reiciendis quo?
-            Eveniet odio illum minus quasi.
+          <p class="text-center">
+            Student - Computer Science - Teesside University
           </p>
         </div>
       </div>
-      <div class="row mt-3">
-        <div class="col-6" id="left-button">
-          <a href="" class="btn btn-lg btn-outline-secondary">Left Button</a>
+      <div class="row mt-3 justify-content-md-center">
+        <div class="col-2 text-right">
+          <a
+            href="https://twitter.com/LeonWilberforce"
+            class="btn btn-lg btn-outline-secondary"
+          >
+            <i class="fab fa-twitter"></i> Twitter</a
+          >
         </div>
-        <div class="col-6" id="right-button">
-          <a href="" class="btn btn-lg btn-secondary">Right Button</a>
+        <div class="col-2 text-center">
+          <a
+            href="https://github.com/leonwilberforce"
+            class="btn btn-lg btn-secondary"
+          >
+            <i class="fab fa-github"></i> Github</a
+          >
+        </div>
+        <div class="col-2 text-left">
+          <a
+            href="https://www.linkedin.com/in/leon-wilberforce/"
+            class="btn btn-lg btn-outline-secondary"
+          >
+            <i class="fab fa-linkedin-in"></i> LinkedIn</a
+          >
         </div>
       </div>
     </div>
