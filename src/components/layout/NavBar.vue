@@ -46,14 +46,34 @@
 </template>
 
 <script>
+var triggerHeight = 0;
+
+const handleScroll = () => {
+  var st = $(window).scrollTop();
+
+  if (st >= triggerHeight) {
+    $("#main-nav").addClass("navbar-condensed");
+  } else {
+    $("#main-nav").removeClass("navbar-condensed");
+  }
+};
+
 export default {
-  name: "NavBar"
+  name: "NavBar",
+  mounted() {
+    document.addEventListener("scroll", handleScroll);
+    triggerHeight =
+      window.innerHeight < 700 - $("#main-nav").outerHeight()
+        ? window.innerHeight
+        : 700 - $("#main-nav").outerHeight();
+  }
 };
 </script>
 
 <style scoped>
 .navbar-brand img {
   border-radius: 50%;
+  transition: all 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .navbar li {
@@ -64,6 +84,7 @@ export default {
 
 nav.navbar {
   background-color: #ffffff00;
+  transition: all 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 li.nav-item a {
@@ -73,5 +94,23 @@ li.nav-item a {
 li.nav-item {
   color: #fff !important;
   font-size: 18px;
+}
+
+.navbar-nav {
+  background: rgba(255, 255, 255, 0);
+}
+
+.nav-link {
+  color: #000 !important;
+}
+
+.navbar.navbar-condensed .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar.navbar-condensed {
+  background-color: #4f5d79;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 </style>
