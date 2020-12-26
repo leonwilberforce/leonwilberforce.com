@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <ParallaxCallToAction />
+
     <AboutMe />
 
     <Projects />

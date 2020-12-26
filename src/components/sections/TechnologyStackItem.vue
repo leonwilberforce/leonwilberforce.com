@@ -1,5 +1,5 @@
 <template>
-  <div class="tech-item" :style="itemStyle">
+  <div class="tech-item m-3" :style="itemStyle">
     <i :class="iconClass"></i>
     <p>{{ name }}</p>
   </div>
@@ -26,7 +26,7 @@ export default {
 <style scoped>
 .tech-item {
   font-size: 50px;
-  margin: 20px 50px;
+  /* margin: 20px 50px; */
   color: #eaf1ffd0;
   width: 100px;
   height: 125px;

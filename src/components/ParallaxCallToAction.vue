@@ -5,12 +5,12 @@
         <div class="col-12">
           <h1>Leon Wilberforce</h1>
           <p class="text-center">
-            Student - Computer Science - Teesside University
+            <span class="text-nowrap">Student - Computer Science</span> - <span class="text-nowrap">Teesside University</span>
           </p>
         </div>
       </div>
-      <div class="row mt-3 justify-content-md-center">
-        <div class="col-2 text-right">
+      <div class="row mt-3 justify-content-center">
+        <div class="col-md-3 col-sm-4 text-sm-right text-center mb-3">
           <a
             href="https://twitter.com/LeonWilberforce"
             class="btn btn-lg btn-outline-secondary"
@@ -18,7 +18,7 @@
             <i class="fab fa-twitter"></i> Twitter</a
           >
         </div>
-        <div class="col-2 text-center">
+        <div class="col-md-3 col-sm-4 text-center mb-3">
           <a
             href="https://github.com/leonwilberforce"
             class="btn btn-lg btn-secondary"
@@ -26,7 +26,7 @@
             <i class="fab fa-github"></i> Github</a
           >
         </div>
-        <div class="col-2 text-left">
+        <div class="col-md-3 col-sm-4 text-sm-left text-center mb-3">
           <a
             href="https://www.linkedin.com/in/leon-wilberforce/"
             class="btn btn-lg btn-outline-secondary"

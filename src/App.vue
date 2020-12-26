@@ -111,8 +111,6 @@ p {
 body {
   width: 100%;
   background: #ebebeb;
-  text-align: center;
-  text-align: justify;
 }
 
 .content {
@@ -232,8 +230,13 @@ footer {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  h1{
+    font-size: 50px;
   }
 
+p {
+  font-size: 18px;
+}
 }
 
 /* Small devices (landscape phones, less than 768px) */

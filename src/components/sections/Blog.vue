@@ -2,17 +2,17 @@
   <section id="blog">
     <h1>Articles</h1>
     <div class="container">
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-center">
         <div class="col-12 category-list text-center">
           <a href="#" class="badge badge-pill badge-category badge-selected"
             >All</a
           >
-          <a href="#" class="badge badge-pill badge-category">Category One</a>
-          <a href="#" class="badge badge-pill badge-category">Category Two</a>
-          <a href="#" class="badge badge-pill badge-category">Category Three</a>
+          <a href="#" class="badge badge-pill badge-category mt-1">Category One</a>
+          <a href="#" class="badge badge-pill badge-category mt-1">Category Two</a>
+          <a href="#" class="badge badge-pill badge-category mt-1">Category Three</a>
         </div>
       </div>
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-center">
         <div class="col-lg-4 col-sm-6">
           <div class="blog-item card ">
             <div class="blog-image"></div>
@@ -54,6 +54,11 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="#" class="btn btn-lg btn-primary">View More</a>
         </div>
       </div>
     </div>
@@ -96,6 +101,7 @@ p {
 
 .category-list .badge-category:hover {
   background-color: #66799e62;
+  border: 1px rgb(100, 100, 100) solid;
 }
 
 .category-list .badge-selected {
