@@ -26,6 +26,17 @@ export default {
 */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -95,39 +106,6 @@ p {
   background-color: #66799e;
   background-image: url("assets/images/60-lines.png");
   background-attachment: fixed;
-}
-
-.social-media ul {
-  padding: 0;
-}
-
-.social-media .fa {
-  font-size: 40px;
-  margin: 5px;
-}
-
-.social-media a {
-  color: #7d95c4;
-}
-
-.social-media a#twitter:hover {
-  color: #38a1f3;
-}
-
-.social-media a#linkedin:hover {
-  color: #0077b5;
-}
-
-.social-media a#github:hover {
-  color: #fff;
-}
-
-.social-media a#rss:hover {
-  color: #f26522;
-}
-
-.social-media a:hover {
-  text-decoration: none;
 }
 
 body {
@@ -248,22 +226,14 @@ footer {
   margin: 0 15px 5px 0;
 }
 
-/* Extra large devices (large desktops) */
-
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  #freelance h3 {
-    width: 320px;
-    margin: 0 auto;
   }
 
-  #freelance {
-    padding: 17.5px;
-  }
 }
 
 /* Small devices (landscape phones, less than 768px) */

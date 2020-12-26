@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="main-nav">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -27,15 +27,13 @@
         >
           <ul class="navbar-nav  ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >About Me</a
-              >
+              <a class="nav-link" href="#about-me-nav">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects-nav">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills-nav">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>

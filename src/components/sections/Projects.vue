@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="small-section container-fluid">
-    <a href="#projects" id="projects"></a>
+    <a class="anchor" id="projects-nav"></a>
     <h1>Projects</h1>
     <div class="row justify-content-md-center text-center">
       <div class="col-6 mt-3">

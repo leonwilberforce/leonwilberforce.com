@@ -1,7 +1,7 @@
 <template>
   <section id="skills" class="small-section">
     <div class="container">
-      <a href="#skills" id="skills"></a>
+      <a class="anchor" id="skills-nav"></a>
       <h1>Skills</h1>
       <p>
         Throughout my education and commitment to furthering my knowledge at

@@ -1,7 +1,7 @@
 <template>
   <section id="about-me">
     <div class="container">
-      <a href="#about-me" id="about-me"></a>
+      <a class="anchor" id="about-me-nav"></a>
       <h1>About me</h1>
       <!-- <img id="about-me-image" src="@\assets\images\about-me.png" alt="" /> -->
       <p>
