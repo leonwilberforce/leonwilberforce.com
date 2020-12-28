@@ -35,9 +35,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#skills-nav">Skills</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-nav">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
