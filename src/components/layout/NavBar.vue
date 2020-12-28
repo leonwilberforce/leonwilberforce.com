@@ -18,6 +18,7 @@
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          @click="toggleNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +26,7 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav  ml-auto">
+          <ul class="navbar-nav ml-auto" @click="clickedNavLink">
             <li class="nav-item">
               <a class="nav-link" href="#about-me-nav">About Me</a>
             </li>
@@ -53,7 +54,7 @@ const handleScroll = () => {
 
   if (st >= triggerHeight) {
     $("#main-nav").addClass("navbar-condensed");
-  } else {
+  } else if ($("#navbarNavDropdown.show").length == 0) {
     $("#main-nav").removeClass("navbar-condensed");
   }
 };
@@ -66,6 +67,16 @@ export default {
       window.innerHeight < 700 - $("#main-nav").outerHeight()
         ? window.innerHeight
         : 700 - $("#main-nav").outerHeight();
+  },
+  methods: {
+    toggleNavbar: function() {
+      $(".navbar").addClass("navbar-condensed");
+    },
+    clickedNavLink: function() {
+      if (!$("#navbarNavDropdown.show").length == 0) {
+        $(".navbar-toggler").click();
+      }
+    }
   }
 };
 </script>
