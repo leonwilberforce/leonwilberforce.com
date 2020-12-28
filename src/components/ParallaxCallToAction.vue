@@ -1,11 +1,12 @@
 <template>
-  <div id="parallax-call-to-action" class="jumbotron vertical-center">
+  <div id="parallax-call-to-action" class="vertical-center">
     <div class="container position-relative">
       <div class="row">
         <div class="col-12">
           <h1>Leon Wilberforce</h1>
           <p class="text-center">
-            <span class="text-nowrap">Student - Computer Science</span> - <span class="text-nowrap">Teesside University</span>
+            <span class="text-nowrap">Student - Computer Science</span> -
+            <span class="text-nowrap">Teesside University</span>
           </p>
         </div>
       </div>

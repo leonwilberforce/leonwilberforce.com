@@ -61,27 +61,84 @@ a:hover {
 
 .card {
   border: none;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+}
+
+.card:hover {
+  border: none;
+  /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-primary {
+  background-color: #4f5d79;
+  border: none;
+}
+
+.btn.btn-lg {
+  border-radius: 1rem;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-primary:hover {
+  background-color: #3b5382;
+  border: none;
 }
 
 .btn.btn-outline-secondary {
-  color: #fff;
-  border-color: #f8f8ff;
+  color: #ebebeb;
+  border-color: #ebebeb;
 }
 
 .btn.btn-secondary:hover {
   color: #000;
-  background-color: #d8d8d8;
+  background-color: #fff;
 }
 
 .btn.btn-outline-secondary:hover {
-  background-color: #d8d8d85d;
+  background-color: #d8d8d81c;
   border-color: #d8d8d85d;
+  color: #fff;
+  border-color: #fff;
 }
 
 .btn.btn-secondary {
   color: #000;
-  background-color: #f8f8ff;
+  background-color: #ebebeb;
+}
+
+.btn.btn-primary.focus,
+.btn.btn-primary:focus {
+  background-color: #2b4477;
+  box-shadow: none;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #2b4477;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #2b4477;
+  border: none;
 }
 
 section h1,
@@ -97,7 +154,8 @@ section {
   padding: 50px 0;
 }
 
-p {
+p,
+label {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
 }
@@ -230,13 +288,13 @@ footer {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  h1{
+  h1 {
     font-size: 50px;
   }
 
-p {
-  font-size: 18px;
-}
+  p {
+    font-size: 18px;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */

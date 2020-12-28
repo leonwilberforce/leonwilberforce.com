@@ -7,9 +7,15 @@
           <a href="#" class="badge badge-pill badge-category badge-selected"
             >All</a
           >
-          <a href="#" class="badge badge-pill badge-category mt-1">Category One</a>
-          <a href="#" class="badge badge-pill badge-category mt-1">Category Two</a>
-          <a href="#" class="badge badge-pill badge-category mt-1">Category Three</a>
+          <a href="#" class="badge badge-pill badge-category mt-1"
+            >Category One</a
+          >
+          <a href="#" class="badge badge-pill badge-category mt-1"
+            >Category Two</a
+          >
+          <a href="#" class="badge badge-pill badge-category mt-1"
+            >Category Three</a
+          >
         </div>
       </div>
       <div class="row justify-content-center">
@@ -92,6 +98,8 @@ p {
 .category-list .badge-category {
   padding: 10px 20px;
   margin: 0 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .category-list .badge-category {
@@ -100,18 +108,21 @@ p {
 }
 
 .category-list .badge-category:hover {
-  background-color: #66799e62;
+  background-color: #66799e28;
   border: 1px rgb(100, 100, 100) solid;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .category-list .badge-selected {
   padding: 10px 20px;
-  background-color: #66799e;
+  background-color: #4f5d79;
   color: white;
   border: none;
 }
 
 .category-list .badge-selected:hover {
-  background-color: #4e5d7a;
+  background-color: #66799e28;
+  border: none;
+  background-color: #4f5d79;
 }
 </style>

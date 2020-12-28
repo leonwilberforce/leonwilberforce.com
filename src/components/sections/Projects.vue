@@ -3,7 +3,11 @@
     <a class="anchor" id="projects-nav"></a>
     <h1>Projects</h1>
     <div class="row justify-content-center text-center">
-      <div class="col-xl-6 mt-5" v-for="project in projects" v-bind:key="project">
+      <div
+        class="col-xl-6 mt-5"
+        v-for="project in projects"
+        v-bind:key="project"
+      >
         <ProjectCard :project="project" />
       </div>
     </div>

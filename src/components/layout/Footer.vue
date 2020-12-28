@@ -5,16 +5,16 @@
         <div class="col-12 text-center">
           <p class="m-0">&copy; Leon Wilberforce 2018-2020</p>
           <div class="social-media">
-            <a
-              href="https://www.linkedin.com/in/leon-wilberforce/"
-              id="linkedin"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
             <a href="https://twitter.com/LeonWilberforce" id="twitter"
               ><i class="fab fa-twitter"></i
             ></a>
             <a href="https://github.com/leonwilberforce" id="github"
               ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/leon-wilberforce/"
+              id="linkedin"
+              ><i class="fab fa-linkedin-in"></i
             ></a>
           </div>
         </div>

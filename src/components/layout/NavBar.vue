@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="main-nav">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="main-nav">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -88,11 +88,14 @@ nav.navbar {
 }
 
 li.nav-item a {
-  color: #fff !important;
+  color: #ebebeb !important;
+}
+
+li.nav-item a:hover {
+  color: #d8d8d8 !important;
 }
 
 li.nav-item {
-  color: #fff !important;
   font-size: 18px;
 }
 
@@ -112,5 +115,20 @@ li.nav-item {
 .navbar.navbar-condensed {
   background-color: #4f5d79;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+  }
+
+  .navbar li a:active,
+  .navbar li a:hover {
+    background-color: #66799e;
+  }
 }
 </style>
