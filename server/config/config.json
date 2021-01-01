@@ -1,0 +1,18 @@
+{
+    "environment": "development",
+    "app_name": "Leon Wilberforce API",
+    "app_desc": "An API that is used to populate projects and articles on leonwilberforce.com",
+    "domain": "localhost:8081",
+    "node_port": 8081,
+    "host": "",
+    "user": "",
+    "password": "",
+    "database": "",
+    "logging": {
+        "sentryDns" : ""
+    },
+    "sendGrid":{
+        "sendGridApiKey": "",
+        "fromEmail": ""
+    }
+}
