@@ -16,7 +16,7 @@ class response {
     static error(message){
         return {
             status: "error",
-            message: message
+            message: message || "Internal Server Error"
           };
     }
 
