@@ -11,6 +11,19 @@ class Article extends Model {
             },
             title: {
                 type: DataTypes.STRING
+            },
+            publishedDate: {
+                type: DataTypes.DATE
+            },
+            author: {
+                type: DataTypes.STRING
+            },
+            content: {
+                type: DataTypes.TEXT
+            },
+            url: {
+                type: DataTypes.STRING,
+                unique: true
             }
         }, {
             sequelize,
