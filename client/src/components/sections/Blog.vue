@@ -19,47 +19,8 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-sm-6">
-          <div class="blog-item card ">
-            <div class="blog-image"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus eveniet perferendis quia consequuntur saepe iure
-                laborum aspernatur dolore fugit, labore recusandae ad
-                necessitatibus iusto accusantium delectus dicta quos hic odit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="blog-item card ">
-            <div class="blog-image"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus eveniet perferendis quia consequuntur saepe iure
-                laborum aspernatur dolore fugit, labore recusandae ad
-                necessitatibus iusto accusantium delectus dicta quos hic odit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="blog-item card ">
-            <div class="blog-image"></div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus eveniet perferendis quia consequuntur saepe iure
-                laborum aspernatur dolore fugit, labore recusandae ad
-                necessitatibus iusto accusantium delectus dicta quos hic odit.
-              </p>
-            </div>
-          </div>
+        <div class="col-lg-4 mt-3 col-sm-6" v-for="article in articles" :key="article.id">
+          <ArticleCard :article="article" />
         </div>
       </div>
       <div class="row">
@@ -72,28 +33,32 @@
 </template>
 
 <script>
+import ArticleCard from './ArticleCard.vue';
+import ArticlesService from '@/services/articles.service.js';
+
 export default {
-  name: "Blog"
+  name: "Blog",
+  data() {
+    return {
+      articles: null,
+    };
+  },
+  components: {
+    ArticleCard
+  },
+  created() {
+    ArticlesService.getLatestArticles(3)
+      .then(response => {
+        this.articles = response;
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }
 };
 </script>
 
 <style scoped>
-p {
-  font-size: 15px;
-  text-align: left;
-}
-
-.blog-image {
-  background-image: url("https://via.placeholder.com/150");
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-}
-
-.blog-item {
-  margin: 30px 10px;
-}
 
 .category-list .badge-category {
   padding: 10px 20px;

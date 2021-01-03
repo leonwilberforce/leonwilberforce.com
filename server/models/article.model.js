@@ -18,12 +18,18 @@ class Article extends Model {
             author: {
                 type: DataTypes.STRING
             },
+            summary: {
+                type: DataTypes.STRING
+            },
             content: {
                 type: DataTypes.TEXT
             },
             url: {
                 type: DataTypes.STRING,
                 unique: true
+            },
+            imageUrl: {
+                type: DataTypes.STRING
             }
         }, {
             sequelize,

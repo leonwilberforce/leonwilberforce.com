@@ -27,7 +27,7 @@ app.get("/articles", async (req, res) => {
   try {
     const { limit, url } = req.query;
 
-    articleLimit = parseInt(limit) || 100;
+    let articleLimit = parseInt(limit) || 100;
 
     let articles = await articleService.getLatestArticles(url, articleLimit);
 
