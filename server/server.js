@@ -11,6 +11,14 @@ const articleService = require("./services/article.service");
 
 app.set("json spaces", 2);
 
+var corsOptions = {
+  origin: config.clientDomain
+}
+
+const cors = require('cors');
+
+app.use(cors(corsOptions));
+
 app.get("/", (req, res) => {
   res.json(response.success(null));
 });
