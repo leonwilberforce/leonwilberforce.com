@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="main-nav">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
             src="@/assets/images/profile-picture.png"
             alt=""
