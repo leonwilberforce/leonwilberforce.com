@@ -42,7 +42,7 @@
 
     <TechnologyStack />
 
-    <Blog />
+    <BlogPreview />
 
     <ContactMe />
   </div>
@@ -54,7 +54,7 @@ import AboutMe from "@/components/sections/AboutMe.vue";
 import Projects from "@/components/sections/Projects.vue";
 import Skills from "@/components/sections/Skills.vue";
 import TechnologyStack from "@/components/sections/TechnologyStack.vue";
-import Blog from "@/components/sections/Blog.vue";
+import BlogPreview from "@/components/sections/BlogPreview.vue";
 import ContactMe from "@/components/sections/ContactMe.vue";
 import ParallaxCallToAction from "@/components/ParallaxCallToAction.vue";
 
@@ -66,7 +66,7 @@ export default {
     Skills,
     ParallaxCallToAction,
     TechnologyStack,
-    Blog,
+    BlogPreview,
     ContactMe
   }
 };
