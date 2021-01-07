@@ -22,5 +22,19 @@ export default {
     }
 
     return null;
+  },
+  
+  async getArticle(url) {
+    let response = await apiClient.get("/articles", {
+      params: { url: url, limit: 1 }
+    });
+
+    let payload = response.data;
+
+    if (payload.status == "success") {
+      return payload.data;
+    }
+
+    return null;
   }
 };
