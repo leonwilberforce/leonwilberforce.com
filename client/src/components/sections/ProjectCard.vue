@@ -2,15 +2,8 @@
   <div class="project card">
     <div class="row">
       <div class="col-md-6">
-        <div
-          class="project-image text-left"
-          :style="{ backgroundImage: 'url(' + project.imageUrl + ')' }"
-        >
-          <i
-            v-for="technology in project.technologies"
-            v-bind:key="technology"
-            :class="technology.iconClass"
-          ></i>
+        <div class="project-image text-left" :style="{ backgroundImage: 'url(' + project.imageUrl + ')' }">
+          <i v-for="technology in project.technologies" v-bind:key="technology" :class="technology.iconClass"></i>
         </div>
       </div>
       <div class="col-md-6 d-flex flex-column">
@@ -20,12 +13,7 @@
             {{ project.description }}
           </p>
         </div>
-        <a
-          v-if="project.link"
-          :href="project.link"
-          class="btn btn-primary mt-auto project-link"
-          >View Project</a
-        >
+        <a v-if="project.link" :href="project.link" class="btn btn-primary mt-auto project-link">View Project</a>
       </div>
     </div>
   </div>

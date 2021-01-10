@@ -8,28 +8,13 @@
 
       <template v-slot:buttons>
         <div class="col-md-3 col-sm-4 text-sm-right text-center mb-3">
-          <a
-            href="https://twitter.com/LeonWilberforce"
-            class="btn btn-lg btn-outline-secondary"
-          >
-            <i class="fab fa-twitter"></i> Twitter</a
-          >
+          <a href="https://twitter.com/LeonWilberforce" class="btn btn-lg btn-outline-secondary"> <i class="fab fa-twitter"></i> Twitter</a>
         </div>
         <div class="col-md-3 col-sm-4 text-center mb-3">
-          <a
-            href="https://github.com/leonwilberforce"
-            class="btn btn-lg btn-secondary"
-          >
-            <i class="fab fa-github"></i> Github</a
-          >
+          <a href="https://github.com/leonwilberforce" class="btn btn-lg btn-secondary"> <i class="fab fa-github"></i> Github</a>
         </div>
         <div class="col-md-3 col-sm-4 text-sm-left text-center mb-3">
-          <a
-            href="https://www.linkedin.com/in/leon-wilberforce/"
-            class="btn btn-lg btn-outline-secondary"
-          >
-            <i class="fab fa-linkedin-in"></i> LinkedIn</a
-          >
+          <a href="https://www.linkedin.com/in/leon-wilberforce/" class="btn btn-lg btn-outline-secondary"> <i class="fab fa-linkedin-in"></i> LinkedIn</a>
         </div>
       </template>
     </ParallaxCallToAction>

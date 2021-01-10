@@ -2,7 +2,7 @@
   <section id="blog-preview">
     <h1>Latest Articles</h1>
     <div class="container">
-      <CardCategories :categories="categories" selectedCategory=0 @category-changed="categoryChanged" />
+      <CardCategories :categories="categories" selectedCategory="0" @category-changed="categoryChanged" />
 
       <ArticleList :articles="articles" />
 
@@ -28,16 +28,19 @@ export default {
       categories: [
         {
           id: 0,
-          title: 'All'
-        },{
+          title: "All"
+        },
+        {
           id: 1,
-          title: 'One'
-        },{
+          title: "One"
+        },
+        {
           id: 2,
-          title: 'Two'
-        },{
+          title: "Two"
+        },
+        {
           id: 3,
-          title: 'Three'
+          title: "Three"
         }
       ]
     };

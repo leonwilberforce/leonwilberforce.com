@@ -1,16 +1,13 @@
 <template>
   <div class="blog">
     <ParallaxCallToAction title="Blog" height="400px"> </ParallaxCallToAction>
-
     <section id="articles">
       <div class="container">
-        <CardCategories :categories="categories" selectedCategory=0 @category-changed="categoryChanged" />
+        <CardCategories :categories="categories" selectedCategory="0" @category-changed="categoryChanged" />
 
         <ArticleList :articles="articles" />
       </div>
     </section>
-
-
   </div>
 </template>
 
@@ -28,16 +25,19 @@ export default {
       categories: [
         {
           id: 0,
-          title: 'All'
-        },{
+          title: "All"
+        },
+        {
           id: 1,
-          title: 'One'
-        },{
+          title: "One"
+        },
+        {
           id: 2,
-          title: 'Two'
-        },{
+          title: "Two"
+        },
+        {
           id: 3,
-          title: 'Three'
+          title: "Three"
         }
       ]
     };
@@ -47,14 +47,8 @@ export default {
     CardCategories,
     ParallaxCallToAction
   },
-  created() {
-    ArticlesService.getLatestArticles()
-      .then(response => {
-        this.articles = response;
-      })
-      .catch(error => {
-        console.error(error);
-      });
+  async created() {
+    this.articles = await ArticlesService.getLatestArticles();
   }
 };
 </script>

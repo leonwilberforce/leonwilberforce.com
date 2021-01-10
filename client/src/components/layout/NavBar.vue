@@ -3,12 +3,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="main-nav">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img
-            src="@/assets/images/profile-picture.png"
-            alt=""
-            width="100"
-            height="100"
-          />
+          <img src="@/assets/images/profile-picture.png" alt="" width="100" height="100" />
         </a>
         <button
           class="navbar-toggler"
@@ -22,22 +17,19 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
-        >
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto" @click="clickedNavLink">
             <li class="nav-item">
-              <a class="nav-link" href="#about-me-nav">About Me</a>
+              <router-link class="nav-link" to="/#about-me-nav">About Me</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects-nav">Projects</a>
+              <router-link class="nav-link" to="/#projects-nav">Projects</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills-nav">Skills</a>
+              <router-link class="nav-link" to="blog">Blog</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact-nav">Contact</a>
+              <router-link class="nav-link" to="/#contact-nav">Contact</router-link>
             </li>
           </ul>
         </div>
@@ -63,10 +55,7 @@ export default {
   name: "NavBar",
   mounted() {
     document.addEventListener("scroll", handleScroll);
-    triggerHeight =
-      window.innerHeight < 700 - $("#main-nav").outerHeight()
-        ? window.innerHeight
-        : 700 - $("#main-nav").outerHeight();
+    triggerHeight = window.innerHeight < 700 - $("#main-nav").outerHeight() ? window.innerHeight : 700 - $("#main-nav").outerHeight();
   },
   methods: {
     toggleNavbar: function() {

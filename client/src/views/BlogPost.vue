@@ -1,6 +1,6 @@
 <template>
   <div class="blog-post">
-    <ParallaxCallToAction :title="article.title" height="400px" v-if="article"> </ParallaxCallToAction>
+    <ParallaxCallToAction :title="article.title" height="400px" v-if="article" />
 
     <section id="article">
       <div v-if="article" class="container">
@@ -8,31 +8,29 @@
           <div class="col-sm-6">{{ publishedDate }}</div>
           <div class="col-sm-6 text-right">2 min read</div>
         </div>
-        <hr>
+        <hr />
         <div v-html="markdownHTML"></div>
       </div>
     </section>
-
-
   </div>
 </template>
 
 <script>
 import ParallaxCallToAction from "@/components/ParallaxCallToAction.vue";
 import ArticlesService from "@/services/articles.service.js";
-import MarkdownIt from 'markdown-it';
-import MarkdownItHighlightjs from 'markdown-it-highlightjs';
-import dayjs from 'dayjs';
+import MarkdownIt from "markdown-it";
+import MarkdownItHighlightjs from "markdown-it-highlightjs";
+import dayjs from "dayjs";
 
 const md = new MarkdownIt({ html: true });
 md.use(MarkdownItHighlightjs);
 md.renderer.rules.table_open = function() {
-      return '<table class="table table-striped">';
+  return '<table class="table table-striped">';
 };
 
 export default {
   name: "BlogPost",
-  props: ['url'],
+  props: ["url"],
   data() {
     return {
       article: null,
@@ -44,13 +42,13 @@ export default {
   },
   computed: {
     publishedDate() {
-      return dayjs(this.article.publishedDate).format('D MMM YYYY');
+      return dayjs(this.article.publishedDate).format("D MMM YYYY");
     }
   },
   mounted() {
+    console.log("ID: " + this.url);
     ArticlesService.getArticle(this.url)
       .then(response => {
-        console.log(response);
         this.article = response[0];
 
         this.markdownHTML = md.render(this.article.content);

@@ -1,29 +1,36 @@
 <template>
   <div id="card-categories">
-      <div class="row justify-content-center">
-        <div class="col-12 category-list text-center">
-          <a role="button" @click="categoryChanged(category)" v-for="category in categories" :key="category" :id="'category-' + category.id" class="badge badge-pill badge-category mt-1">{{ category.title }}</a>
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-12 category-list text-center">
+        <a
+          role="button"
+          @click="categoryChanged(category)"
+          v-for="category in categories"
+          :key="category"
+          :id="'category-' + category.id"
+          class="badge badge-pill badge-category mt-1"
+          >{{ category.title }}</a
+        >
       </div>
+    </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "CardCategories",
-  emits: ['category-changed'],
+  emits: ["category-changed"],
   props: {
     categories: Object,
     selectedCategory: String
   },
-  data(){
+  data() {
     return {
       selected: this.selectedCategory
-    }
+    };
   },
   mounted() {
-     $("a#category-" + this.selected).addClass("badge-selected");
+    $("a#category-" + this.selected).addClass("badge-selected");
   },
   methods: {
     categoryChanged(category) {
@@ -32,7 +39,7 @@ export default {
 
       this.selected = category.id;
 
-      this.$emit('category-changed', category)
+      this.$emit("category-changed", category);
     }
   }
 };

@@ -1,14 +1,10 @@
 <template>
   <div id="article-list">
-      <div class="row justify-content-center">
-        <div
-          class="col-lg-4 mt-3 col-sm-6"
-          v-for="article in articles"
-          :key="article.id"
-        >
-          <ArticleCard :article="article" />
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 mt-3 col-sm-6" v-for="article in articles" :key="article.id">
+        <ArticleCard :article="article" />
       </div>
+    </div>
   </div>
 </template>
 
@@ -27,6 +23,10 @@ export default {
 </script>
 
 <style scoped>
+#article-list {
+  min-height: 500px;
+}
+
 .category-list .badge-category {
   padding: 10px 20px;
   margin: 0 10px;

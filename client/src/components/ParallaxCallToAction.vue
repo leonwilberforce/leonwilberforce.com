@@ -1,9 +1,5 @@
 <template>
-  <div
-    id="parallax-call-to-action"
-    class="vertical-center"
-    :style="{ height: height }"
-  >
+  <div id="parallax-call-to-action" class="vertical-center" :style="{ height: height }">
     <div class="container position-relative">
       <div class="row">
         <div class="col-12">

@@ -20,28 +20,13 @@
       <ul>
         <!-- <li><a id="rss" class="fa fa-rss-square" aria-hidden="true" href="#"></a></li> -->
         <li>
-          <a
-            id="twitter"
-            class="fa fa-twitter-square"
-            aria-hidden="true"
-            href="https://twitter.com/leonwilberforce"
-          ></a>
+          <a id="twitter" class="fa fa-twitter-square" aria-hidden="true" href="https://twitter.com/leonwilberforce"></a>
         </li>
         <li>
-          <a
-            id="linkedin"
-            class="fa fa-linkedin-square"
-            aria-hidden="true"
-            href="https://www.linkedin.com/in/leon-wilberforce/"
-          ></a>
+          <a id="linkedin" class="fa fa-linkedin-square" aria-hidden="true" href="https://www.linkedin.com/in/leon-wilberforce/"></a>
         </li>
         <li>
-          <a
-            id="github"
-            class="fa fa-github-square"
-            aria-hidden="true"
-            href="https://github.com/leonwilberforce"
-          ></a>
+          <a id="github" class="fa fa-github-square" aria-hidden="true" href="https://github.com/leonwilberforce"></a>
         </li>
       </ul>
     </div>
