@@ -23,7 +23,7 @@ export default {
 
     return null;
   },
-  
+
   async getArticle(url) {
     let response = await apiClient.get("/articles", {
       params: { url: url, limit: 1 }
