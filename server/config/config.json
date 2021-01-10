@@ -3,7 +3,7 @@
     "app_name": "Leon Wilberforce API",
     "app_desc": "An API that is used to populate projects and articles on leonwilberforce.com",
     "domain": "localhost:8081",
-    "clientDomain": "localhost:8080",
+    "clientDomain": "http://localhost:8080",
     "node_port": 8081,
     "host": "",
     "user": "",
@@ -14,6 +14,7 @@
     },
     "sendGrid":{
         "sendGridApiKey": "",
-        "fromEmail": ""
+        "fromEmail": "",
+        "toEmail": ""
     }
 }
