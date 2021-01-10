@@ -23,10 +23,7 @@
 <script>
 const handleScroll = () => {
   var st = $(window).scrollTop();
-  $("#parallax-call-to-action").css(
-    "background-position-y",
-    -1200 + -st / 20 + "px"
-  );
+  $("#parallax-call-to-action").css("background-position-y", -st / 20 + "px");
   $("#parallax-call-to-action .container").css("top", st / 20 + "px");
 };
 
@@ -44,16 +41,16 @@ export default {
 
 <style scoped>
 #parallax-call-to-action {
-  background-image: url("@./../../assets/images/2.png");
+  background-image: url("@./../../assets/images/background-image.jpg");
   height: 700px;
   max-height: 100vh;
   width: 100%;
-  background-position: center;
-  background-position-y: -1200px;
+  background-position: top;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   position: relative;
   color: white;
+  background-size: cover;
 }
 .vertical-center {
   display: flex;
