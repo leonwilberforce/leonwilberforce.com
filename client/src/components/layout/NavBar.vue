@@ -40,6 +40,7 @@
 
 <script>
 var triggerHeight = 0;
+import $ from "jquery";
 
 const handleScroll = () => {
   var st = $(window).scrollTop();

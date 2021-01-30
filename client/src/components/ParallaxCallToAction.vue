@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import $ from "jquery";
+
 const handleScroll = () => {
   var st = $(window).scrollTop();
   $("#parallax-call-to-action").css("background-position-y", -st / 20 + "px");

@@ -19,11 +19,16 @@
 import ParallaxCallToAction from "@/components/ParallaxCallToAction.vue";
 import ArticlesService from "@/services/articles.service.js";
 import MarkdownIt from "markdown-it";
-import MarkdownItHighlightjs from "markdown-it-highlightjs";
+import hljs from "highlight.js/lib/core";
+
+import javascript from "highlight.js/lib/languages/javascript";
+hljs.registerLanguage("javascript", javascript);
+
+import MarkdownItHighlightjs from "markdown-it-highlightjs/core";
 import dayjs from "dayjs";
 
 const md = new MarkdownIt({ html: true });
-md.use(MarkdownItHighlightjs);
+md.use(MarkdownItHighlightjs, { hljs });
 md.renderer.rules.table_open = function() {
   return '<table class="table table-striped">';
 };
