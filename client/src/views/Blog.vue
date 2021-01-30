@@ -17,6 +17,8 @@ import ArticlesService from "@/services/articles.service.js";
 import ArticleList from "@/components/sections/ArticleList.vue";
 import CardCategories from "@/components/sections/CardCategories.vue";
 
+import { useHead } from "@vueuse/head";
+
 export default {
   name: "Blog",
   data() {
@@ -49,6 +51,41 @@ export default {
   },
   async created() {
     this.articles = await ArticlesService.getLatestArticles();
+  },
+  setup() {
+    useHead({
+      title: "Blog",
+      meta: [
+        {
+          name: "description",
+          content: "A blog based around full-stack development written by Leon Wilberforce."
+        },
+        {
+          property: "og:title",
+          content: "A Blog Written by Leon Wilberforce"
+        },
+        {
+          property: "og:description",
+          content: "A blog based around full-stack development written by Leon Wilberforce."
+        },
+        {
+          property: "og:image",
+          content: "https://leonwilberforce.com/twitter-card-image.jpg"
+        },
+        {
+          name: "twitter:card",
+          content: "summary"
+        },
+        {
+          name: "twitter:creator",
+          content: "@leonwilberforce"
+        },
+        {
+          name: "twitter:site",
+          content: "@leonwilberforce"
+        }
+      ]
+    });
   }
 };
 </script>

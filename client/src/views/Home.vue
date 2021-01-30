@@ -43,6 +43,8 @@ import BlogPreview from "@/components/sections/BlogPreview.vue";
 import ContactMe from "@/components/sections/ContactMe.vue";
 import ParallaxCallToAction from "@/components/ParallaxCallToAction.vue";
 
+import { useHead } from "@vueuse/head";
+
 export default {
   name: "Home",
   components: {
@@ -53,6 +55,48 @@ export default {
     TechnologyStack,
     BlogPreview,
     ContactMe
+  },
+  data() {
+    return {
+      logo: require("./../assets/images/background-image.webp")
+    };
+  },
+  setup() {
+    useHead({
+      title: "Leon Wilberforce",
+      meta: [
+        {
+          name: "description",
+          content:
+            "My name is Leon Wilberforce, I’m currently on placement in my third year of a Computer Science BSc (Hons) degree at Teesside University. In my spare time I enjoy working on a variety of different projects, many of which can be found here. I tend to use projects as a way to experiment with new technologies."
+        },
+        {
+          property: "og:title",
+          content: "Leon Wilberforce - Personal Website"
+        },
+        {
+          property: "og:description",
+          content:
+            "My name is Leon Wilberforce, I’m currently on placement in my third year of a Computer Science BSc (Hons) degree at Teesside University. In my spare time I enjoy working on a variety of different projects, many of which can be found here. I tend to use projects as a way to experiment with new technologies."
+        },
+        {
+          property: "og:image",
+          content: "https://leonwilberforce.com/twitter-card-image.jpg"
+        },
+        {
+          name: "twitter:card",
+          content: "summary"
+        },
+        {
+          name: "twitter:creator",
+          content: "@leonwilberforce"
+        },
+        {
+          name: "twitter:site",
+          content: "@leonwilberforce"
+        }
+      ]
+    });
   }
 };
 </script>
