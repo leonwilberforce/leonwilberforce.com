@@ -7,8 +7,7 @@
         <div class="row" v-if="!emailSent">
           <div class="col-12">
             <p>
-              If you would like to discuss any of my work or ask about freelance work, feel free to contact me via the form to your right or though the email
-              below.
+              If you would like to discuss any of my work, feel free to contact me via the form below or each out on social media.
             </p>
             <div class="row">
               <div class="col-sm-6">
