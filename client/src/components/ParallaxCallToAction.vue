@@ -66,4 +66,11 @@ export default {
 p {
   font-size: 25px !important;
 }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  #parallax-call-to-action {
+    background-attachment: fixed;
+  }
+}
 </style>

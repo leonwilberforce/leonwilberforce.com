@@ -105,7 +105,38 @@ export default {
   margin: 0 0 0 10px;
 }
 
-.skill-left > .skill-title {
+.skill-left > .skill-title h3 {
   text-align: left;
+  margin-left: 10px;
+}
+
+.skill .skill-title {
+  display: flex;
+}
+
+.skill .skill-title h3 {
+  align-self: flex-end;
+}
+
+.skill .right h3 {
+  margin-left: auto;
+}
+
+.skill .right .skill-image {
+  margin: 0 0 0 10px;
+}
+
+.skill img {
+  width: 30px;
+}
+
+.skill-image {
+  font-size: 40px;
+  /* background: #4f5d79;
+  color: #fff; */
+  color: #4f5d79;
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
 }
 </style>

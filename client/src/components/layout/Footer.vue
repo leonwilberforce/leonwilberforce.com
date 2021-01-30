@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 text-center">
-          <p class="m-0">&copy; Leon Wilberforce 2018-2020</p>
+          <p class="m-0">&copy; Leon Wilberforce 2018-<span v-text="new Date().getFullYear()"></span></p>
           <div class="social-media">
             <a href="https://twitter.com/LeonWilberforce" id="twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://github.com/leonwilberforce" id="github"><i class="fab fa-github"></i></a>

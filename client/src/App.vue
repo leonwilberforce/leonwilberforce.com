@@ -160,21 +160,9 @@ label {
   font-size: 20px;
 }
 
-.content {
-  background-color: #66799e;
-  background-image: url("assets/images/60-lines.png");
-  background-attachment: fixed;
-}
-
 body {
   width: 100%;
   background: #ebebeb;
-}
-
-.content {
-  display: inline-flex;
-  flex-direction: column;
-  padding: 50px 0 0 0;
 }
 
 @keyframes example {
@@ -228,37 +216,6 @@ footer {
 
 .copyright {
   margin: 0;
-}
-
-.skill .skill-title {
-  display: flex;
-}
-
-.skill .skill-title h3 {
-  align-self: flex-end;
-}
-
-.skill .skill-image {
-  margin: 0;
-  background: #4f5d79;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
-  margin-right: 10px;
-}
-
-.skill .right h3 {
-  margin-left: auto;
-}
-
-.skill .right .skill-image {
-  margin: 0 0 0 10px;
-}
-
-.skill img {
-  width: 30px;
 }
 
 #about-me-image {
