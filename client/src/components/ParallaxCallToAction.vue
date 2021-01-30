@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 #parallax-call-to-action {
-  background-image: url("@./../../assets/images/background-image.jpg");
+  background-image: url("@./../../assets/images/background-image.webp");
   height: 700px;
   max-height: 100vh;
   width: 100%;

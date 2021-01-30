@@ -3,7 +3,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="main-nav">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="@/assets/images/profile-picture.png" alt="" width="100" height="100" />
+          <img src="@/assets/images/profile-picture.webp" alt="" width="100" height="100" />
         </a>
         <button
           class="navbar-toggler"
@@ -25,9 +25,9 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/#projects-nav">Projects</router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link class="nav-link" to="blog">Blog</router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
               <router-link class="nav-link" to="/#contact-nav">Contact</router-link>
             </li>

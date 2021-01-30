@@ -24,7 +24,7 @@ export default {
         {
           title: "Discord Studybot",
           description: `A discord bot that is used to track assignments and deadlines in college. Built using Python and the discord.py API.`,
-          imageUrl: require("../../assets/images/projects/3.png"),
+          imageUrl: require("../../assets/images/projects/3.webp"),
           link: null,
           technologies: [
             {
@@ -42,7 +42,7 @@ export default {
         {
           title: "Landscaping",
           description: `A PHP website designed as part of a course in 2017. Built using HTML, CSS and PHP`,
-          imageUrl: require("../../assets/images/projects/1.png"),
+          imageUrl: require("../../assets/images/projects/1.webp"),
           link: "https://landscaping.sites.leonwilberforce.com/",
           technologies: [
             {
@@ -65,7 +65,7 @@ export default {
         {
           title: "Sorting Algorithms",
           description: `A sorting algorithm GUI visualiser. Built using Java and the Swing library. Supported algorithms: bubble, shuttle and shaker.`,
-          imageUrl: require("../../assets/images/projects/2.png"),
+          imageUrl: require("../../assets/images/projects/2.webp"),
           link: "https://github.com/leonwilberforce/GUI-Sorting-Algorithms",
           technologies: [
             {

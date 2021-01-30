@@ -1,7 +1,7 @@
 <template>
   <div id="sidebar" class="column">
     <div class="top-left">
-      <img src="@/assets/images/profile-picture.png" alt="Picture of Leon" />
+      <img src="@/assets/images/profile-picture.webp" alt="Picture of Leon" />
       <h2>Leon Wilberforce</h2>
       <p><span>Student</span> - Computer Science</p>
       <hr />
