@@ -1,12 +1,12 @@
 <template>
   <div class="blog-post">
-    <ParallaxCallToAction :title="article.title" height="400px" v-if="article" />
+    <ParallaxCallToAction :title="article.title" height="400px" v-if="article" :titleStyle="{ 'margin-top': '126px' }" />
 
     <section id="article">
       <div v-if="article" class="container">
         <div class="row">
-          <div class="col-sm-6">{{ publishedDate }}</div>
-          <div class="col-sm-6 text-right">2 min read</div>
+          <div class="col-sm-6">Published: {{ publishedDate }}</div>
+          <div class="col-sm-6 text-right">3 min read</div>
         </div>
         <hr />
         <div v-html="markdownHTML"></div>
@@ -22,10 +22,18 @@ import MarkdownIt from "markdown-it";
 import hljs from "highlight.js/lib/core";
 
 import javascript from "highlight.js/lib/languages/javascript";
+import json from "highlight.js/lib/languages/json";
 hljs.registerLanguage("javascript", javascript);
+hljs.registerLanguage("json", json);
 
 import MarkdownItHighlightjs from "markdown-it-highlightjs/core";
 import dayjs from "dayjs";
+import advancedFormat from 'dayjs/plugin/advancedFormat';
+
+dayjs.extend(advancedFormat);
+
+import { useHead } from "@vueuse/head";
+import { computed } from "vue";
 
 const md = new MarkdownIt({ html: true });
 md.use(MarkdownItHighlightjs, { hljs });

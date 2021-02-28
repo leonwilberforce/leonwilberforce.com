@@ -1,16 +1,17 @@
 <template>
   <section id="blog-preview">
+    <a class="anchor" id="latest-articles-nav"></a>
     <h1>Latest Articles</h1>
     <div class="container">
-      <CardCategories :categories="categories" selectedCategory="0" @category-changed="categoryChanged" />
+      <!-- <CardCategories :categories="categories" selectedCategory="0" @category-changed="categoryChanged" /> -->
 
       <ArticleList :articles="articles" />
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-12 text-center">
           <a href="/blog" class="btn btn-lg btn-primary">View More</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -18,7 +19,7 @@
 <script>
 import ArticlesService from "@/services/articles.service.js";
 import ArticleList from "./ArticleList.vue";
-import CardCategories from "./CardCategories.vue";
+// import CardCategories from "./CardCategories.vue";
 
 export default {
   name: "BlogPreview",
@@ -46,8 +47,8 @@ export default {
     };
   },
   components: {
-    ArticleList,
-    CardCategories
+    ArticleList
+    // CardCategories
   },
   created() {
     ArticlesService.getLatestArticles(3)

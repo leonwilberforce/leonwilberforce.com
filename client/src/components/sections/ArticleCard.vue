@@ -1,11 +1,11 @@
 <template>
   <div class="article-item card ">
-    <div class="article-image" :style="{ backgroundImage: 'url(' + article.imageUrl + ')' }"></div>
+    <div class="article-image" :style="{ backgroundImage: 'url(' + blogImage + ')' }"></div>
     <div class="card-body">
       <h5 class="card-title">{{ article.title }}</h5>
       <p class="card-text">{{ article.summary }}</p>
     </div>
-    <a :href="'blog/' + article.url" class="btn btn-primary mt-auto article-link">Read More</a>
+    <router-link class="btn btn-primary mt-auto article-link" :to="'/blog/' + article.url">Read More</router-link>
   </div>
 </template>
 
@@ -14,6 +14,11 @@ export default {
   name: "ArticleCard",
   props: {
     article: Object
+  },
+  computed: {
+    blogImage() {
+      return require("../../assets/images/blog/" + this.article.imageUrl);
+    }
   }
 };
 </script>

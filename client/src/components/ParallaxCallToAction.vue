@@ -3,8 +3,8 @@
     <div class="container position-relative">
       <div class="row">
         <div class="col-12">
-          <h1>{{ title }}</h1>
-          <p class="subtitle text-center">
+          <h1 :style="titleStyle">{{ title }}</h1>
+          <p class="subtitle text-center m-0">
             <slot name="subtitle"></slot>
           </p>
         </div>
@@ -32,7 +32,8 @@ export default {
   },
   props: {
     title: String,
-    height: String
+    height: String,
+    titleStyle: String
   }
 };
 </script>
