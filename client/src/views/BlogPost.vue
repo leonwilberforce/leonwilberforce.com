@@ -39,6 +39,7 @@ export default {
   data() {
     return {
       article: null,
+      title: "",
       markdownHTML: null
     };
   },
@@ -47,7 +48,10 @@ export default {
   },
   computed: {
     publishedDate() {
-      return dayjs(this.article.publishedDate).format("D MMM YYYY");
+      return dayjs(this.article.publishedDate).format("Do MMMM YYYY");
+    },
+    blogImage() {
+      return location.origin + require("../assets/images/blog/" + this.article.imageUrl);
     }
   },
   mounted() {
@@ -56,11 +60,65 @@ export default {
       .then(response => {
         this.article = response[0];
 
+        this.title = this.article.title;
+
         this.markdownHTML = md.render(this.article.content);
       })
       .catch(error => {
         console.error(error);
       });
+
+    useHead({
+      title: computed(() => "Blog - " + this.title),
+      meta: [
+        {
+          name: "description",
+          content: computed(() => {
+            if (this.article) {
+              return this.article.summary;
+            }
+          })
+        },
+        {
+          property: "og:title",
+          content: computed(() => "Blog - " + this.title)
+        },
+        {
+          property: "og:description",
+          content: computed(() => {
+            if (this.article) {
+              return this.article.summary;
+            }
+          })
+        },
+        {
+          property: "og:image",
+          content: computed(() => {
+            if (this.article) {
+              return this.blogImage;
+            }
+          })
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image"
+        },
+        {
+          name: "twitter:creator",
+          content: "@leonwilberforce"
+        },
+        {
+          name: "twitter:site",
+          content: "@leonwilberforce"
+        }
+      ]
+    });
   }
 };
 </script>
+
+<style scoped>
+.hljs {
+  background-color: #f5f5f5;
+}
+</style>
