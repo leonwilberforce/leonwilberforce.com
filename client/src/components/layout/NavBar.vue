@@ -2,14 +2,14 @@
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="main-nav">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <router-link class="navbar-brand" to="/">
           <img src="@/assets/images/profile-picture.webp" alt="" width="100" height="100" />
-        </a>
+        </router-link>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -39,11 +39,14 @@
 </template>
 
 <script>
-var triggerHeight = 0;
 import $ from "jquery";
 
 const handleScroll = () => {
   var st = $(window).scrollTop();
+
+  let elementHeight = $("#parallax-call-to-action").height();
+
+  let triggerHeight = window.innerHeight < elementHeight - $("#main-nav").outerHeight() ? window.innerHeight : elementHeight - $("#main-nav").outerHeight();
 
   if (st >= triggerHeight) {
     $("#main-nav").addClass("navbar-condensed");
@@ -56,7 +59,6 @@ export default {
   name: "NavBar",
   mounted() {
     document.addEventListener("scroll", handleScroll);
-    triggerHeight = window.innerHeight < 700 - $("#main-nav").outerHeight() ? window.innerHeight : 700 - $("#main-nav").outerHeight();
   },
   methods: {
     toggleNavbar: function() {
