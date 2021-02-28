@@ -59,6 +59,10 @@ a:hover {
   color: #858585;
 }
 
+.hljs {
+  background-color: #f5f5f5;
+}
+
 .card {
   border: none;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);

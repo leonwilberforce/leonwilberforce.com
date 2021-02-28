@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import Blog from "../views/Blog.vue";
+// import Blog from "../views/Blog.vue";
 import BlogPost from "../views/BlogPost.vue";
+import NotFound from "../views/NotFound.vue";
 
 const routes = [
   {
@@ -12,23 +13,21 @@ const routes = [
       title: "Home"
     }
   },
-  {
-    path: "/blog",
-    name: "Blog",
-    component: Blog,
-    meta: {
-      title: "Blog"
-    }
-  },
+  // {
+  //   path: "/blog",
+  //   name: "Blog",
+  //   component: Blog,
+  //   meta: {
+  //     title: "Blog"
+  //   }
+  // },
   {
     path: "/blog/:url",
     name: "BlogPost",
     props: true,
-    component: BlogPost,
-    meta: {
-      title: "BlogPost"
-    }
-  }
+    component: BlogPost
+  },
+  { path: '/:catchAll(.*)', component: NotFound }
 ];
 
 const router = createRouter({
@@ -44,14 +43,6 @@ const router = createRouter({
       return { top: 0 };
     }
   }
-});
-
-router.beforeEach((to, from, next) => {
-  /* It will change the title when the router is change*/
-  if (to.meta.title) {
-    document.title = to.meta.title;
-  }
-  next();
 });
 
 export default router;
