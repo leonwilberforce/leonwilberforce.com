@@ -27,7 +27,7 @@ const routes = [
     props: true,
     component: BlogPost
   },
-  { path: '/:catchAll(.*)', component: NotFound }
+  { path: "/:catchAll(.*)", component: NotFound }
 ];
 
 const router = createRouter({

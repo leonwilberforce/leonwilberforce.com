@@ -1,7 +1,6 @@
 const express = require("express");
 const response = require("./services/response.service");
 const config = require("./config/config.json");
-const bodyParser = require('body-parser');
 require("./config/sql");
 
 const app = express();

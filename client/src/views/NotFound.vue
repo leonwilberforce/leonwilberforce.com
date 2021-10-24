@@ -21,7 +21,7 @@ export default {
   color: #ebebeb;
 }
 
-#ripped-image-1{
+#ripped-image-1 {
   position: absolute;
   transform: rotate(5deg);
   right: 10%;
@@ -29,7 +29,7 @@ export default {
   width: 300px;
 }
 
-#ripped-image-2{
+#ripped-image-2 {
   position: absolute;
   transform: rotate(-5deg);
   left: 10%;

@@ -42,4 +42,12 @@ footer {
 .social-media a#github:hover {
   color: #fff;
 }
+
+a {
+  color: #c6c6c6;
+}
+
+a:hover {
+  color: #858585;
+}
 </style>

@@ -51,12 +51,9 @@ h1 {
   font-size: 70px;
 }
 
-a {
-  color: #c6c6c6;
-}
-
+a,
 a:hover {
-  color: #858585;
+  color: #3764bc;
 }
 
 .hljs {
