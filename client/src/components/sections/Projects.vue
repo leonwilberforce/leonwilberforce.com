@@ -43,7 +43,7 @@ export default {
           title: "Landscaping",
           description: `A PHP website designed as part of a course in 2017. Built using HTML, CSS and PHP`,
           imageUrl: require("../../assets/images/projects/1.webp"),
-          link: "https://landscaping.sites.leonwilberforce.com/",
+          link: "https://landscaping.leonwilberforce.com/",
           technologies: [
             {
               name: "PHP",
