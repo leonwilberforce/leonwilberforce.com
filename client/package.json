@@ -20,6 +20,7 @@
     "markdown-it-highlightjs": "^3.4.0",
     "vue": "^3.0.0",
     "vue-meta": "^3.0.0-alpha.0",
+    "vue-plausible": "git+https://github.com/YanDevDe/vue-plausible.git",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
