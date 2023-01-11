@@ -1,6 +1,7 @@
 const express = require("express");
+require("dotenv").config({ path: `.env.local` });
+
 const response = require("./services/response.service");
-const config = require("./config/config.json");
 require("./config/sql");
 
 const app = express();
@@ -13,7 +14,7 @@ const emailService = require("./services/email.service");
 app.set("json spaces", 2);
 
 var corsOptions = {
-  origin: config.clientDomain
+  origin: process.env.CLIENT_DOMAIN
 }
 
 const cors = require('cors');
@@ -86,6 +87,6 @@ app.post("/contact", [
   }
 });
 
-app.listen(config.node_port, () => {
-  logger.info("Server is listening on port: " + config.node_port);
+app.listen(process.env.NODE_PORT, () => {
+  logger.info("Server is listening on port: " + process.env.NODE_PORT);
 });

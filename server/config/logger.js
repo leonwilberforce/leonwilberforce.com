@@ -1,11 +1,10 @@
 const winston = require('winston');
 const Sentry = require('winston-transport-sentry-node').default;
-const config = require('./config.json');
 
 const sentryOptions = {
     sentry: {
-      dsn: config.logging.sentryDns,
-      environment: config.config_id
+      dsn: process.env.LOGGING_SENTRY_DNS,
+      environment: process.env.ENVIRONMENT
     },
     level: 'error'
 };

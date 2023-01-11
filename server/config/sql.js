@@ -1,9 +1,8 @@
-const config = require("./config.json");
 const Sequelize = require("sequelize");
 const logger = require("../config/logger");
 
-const sequelize = new Sequelize(config.database, config.user, config.password, {
-  host: config.host,
+const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, {
+  host: process.env.DB_HOST,
   dialect: "mysql",
   logging: (msg) => logger.info(msg),
   //logging: false

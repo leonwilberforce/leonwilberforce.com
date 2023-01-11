@@ -1,7 +1,6 @@
-const config = require("../config/config.json");
 const sgMail = require('@sendgrid/mail');
 
-sgMail.setApiKey(config.sendGrid.sendGridApiKey);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 class emailService {
   static async sendContactEmail(fromEmail, name, text) {
@@ -12,8 +11,8 @@ class emailService {
     content += "\n\nMessage: " + text + "\n\n";
 
     let message = {
-      to: config.sendGrid.toEmail,
-      from: config.sendGrid.fromEmail,
+      to: process.env.SENDGRID_TO_EMAIL,
+      from: process.env.SENDGRID_FROM_Email,
       subject: "[CONTACT] - " + name,
       text: content
     }
