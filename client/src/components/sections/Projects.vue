@@ -74,6 +74,19 @@ export default {
               iconClass: "fab fa-java"
             }
           ]
+        },
+        {
+          title: "Auth0 Token Retriever",
+          description: `A debugging tool to generate access tokens using Auth0's PKCE authentication flow.`,
+          imageUrl: require("../../assets/images/projects/4.png"),
+          link: "https://auth0-debugger.leonwilberforce.com/",
+          technologies: [
+            {
+              name: "VueJS",
+              color: "#fff",
+              iconClass: "fab fa-vuejs"
+            }
+          ]
         }
       ]
     };
