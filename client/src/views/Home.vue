@@ -28,8 +28,6 @@
     <TechnologyStack />
 
     <BlogPreview />
-
-    <ContactMe />
   </div>
 </template>
 
@@ -40,7 +38,6 @@ import Projects from "@/components/sections/Projects.vue";
 import Skills from "@/components/sections/Skills.vue";
 import TechnologyStack from "@/components/sections/TechnologyStack.vue";
 import BlogPreview from "@/components/sections/BlogPreview.vue";
-import ContactMe from "@/components/sections/ContactMe.vue";
 import ParallaxCallToAction from "@/components/ParallaxCallToAction.vue";
 
 import { useHead } from "@vueuse/head";
@@ -54,7 +51,6 @@ export default {
     ParallaxCallToAction,
     TechnologyStack,
     BlogPreview,
-    ContactMe
   },
   data() {
     return {
